@@ -9,13 +9,13 @@
     <body>
         <script>
 
-        alert("hello world")
-        let message = prompt("whats your age ");
-        alert(`you are ${message} years old`);
+        let age = prompt("age?" , 18);
+        let message = (age<3)? 'hello baby':
+        (age<18)? 'hello':
+        (age>100)? "starbge":
+        
 
-        let yougood = confirm("are you good or not")
-        alert(isyougood)
-
+        alert(message);
 
 
 

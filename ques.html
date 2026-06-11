@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> logical operator practice</title>
+    </head>
+    <body>
+        <script>
+         /*   let browser = prompt("enter type of browser");
+           if (browser == "edge"){
+            alert("you have got the edge");
+            
+           }
+           else if (browser == "chrome" || "firefox" || "safari" || "opera"){
+            alert("ohk we support these browser too");
+           }
+           else {
+            alert("we hope that this page looks ok!")
+           }
+ 
+            let a = +prompt('a?', '');
+            switch(a){
+                case 0:
+                alert("0");
+                break;
+
+                case 1 : 
+                alert("1");
+                break;
+                case 2:
+                case 3:
+                alert ("2,3");
+                break;
+            }
+
+            */
+           /*let user = {}
+           user = {
+            name : "john",
+            surname : "smith",
+           }
+           user.name = "pete";
+           delete user.name
+
+
+function isempty(obj){
+    for (let key in obj){
+        return false;
+    }
+    return true;
+
+}
+    
+    let salaries = {
+        john : 100,
+        ann: 160,
+        pete : 130,
+    }
+    let sum = 0
+    for(let key in salaries){
+       sum  = sum + salaries[key];
+    }
+    alert (sum);
+    
+    function multiplyNumeric(obj){
+        for (let key in obj){
+            if (typeof obj[key] == "number"){
+
+        obj[key] *= 2;
+            }
+        }
+    }
+
+    
+         let user = {
+            name: "john",
+            age: 30,
+         };
+             let clone = {}
+             for(let key in clone){
+                clone[key] = user[key];
+             }
+             clone.name = 'komal'
+             alert(user.name)
+
+             let user2 ={
+                name: "komal",
+             };
+             let permission1 = { 
+                canview : true
+             };
+             let permission2 = {
+                canedit : true
+             };
+            
+             object.assign(user , permission1 , permission2);
+
+             alert (user.name);
+             alert(user.canview);
+             alert (user.canedit);
+
+
+
+function marry (man,women){
+    women.husband = man;
+    man.wife = women;
+
+return {
+    father : man,
+    mother : women
+}
+}
+
+let family = marry({
+    name:"john",
+},{
+    name:"ann",
+});
+
+
+let user = {
+    name : "komal",
+    age :90
+
+};
+user.sayhi = function(){
+    alert ("hello ")
+};
+
+user.sayhi();
+
+ 
+ 
+let user = {
+    name :" john",
+};
+let admin = {
+    name :" admin",
+};
+
+function sayhi(){
+    alert(this.name)
+}
+
+
+// constructor and new keywords use
+ function Car(model,colour,price){
+    this.model = model;
+    this.colour = colour;
+    this.price = price
+
+ }
+
+ let car1 = new Car("swift" ,"red" ,900);
+ 
+
+  function User(name){
+    if(!new.target){
+        return new User(name);
+    }
+    this.name = name;
+  }
+
+  let john = User("john");
+  alert(john.name)
+  
+
+function User(name){
+    this.name = name;
+    this.sayhi() = function(){
+        alert("my name is:" + this.name);
+    };
+}
+ let john = new User("john");
+ john.sayhi();
+
+
+
+let car = {
+    name : "swift",
+    colour : "red"
+}
+function A(){
+    return car;
+}
+function B(){
+    return car;
+}
+alert (new A() == new B());
+
+
+function Calculator(){
+
+   this.read = function(){
+        this.a = +prompt('?a', 1);
+        this.b = +prompt('?b',2)
+
+    };
+     this.Sum = function(){
+        return this.a + this.b;
+
+    };
+    this.mul = function(){
+        return this.a * this.b;
+    };
+}
+let calci1 = new Calculator();
+calci1.read();
+
+alert("sum" + calci1.Sum());
+alert("mul" + calci1.mul());
+*/
+
+function  Accumulator(startingValue ){
+    this.value = startingValue;
+
+    this.read = function(){
+        this.value += +prompt("how much to add" , 5);
+
+    };
+
+}
+
+let ac = new Accumulator(5);
+ac.read();
+alert(ac.value);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>
