@@ -66,3 +66,18 @@ let users4= [
 let names = users4.map(user => user.name);
 console.log(names)
 
+let arr8 = [9,8,7];
+let ans8 = arr8.map(num => num +100);
+console.log(ans8)
+
+let arr9 = [1,2,15];
+arr9.sort((a,b) => a-b);
+console.log(arr9);
+
+let users2 = [
+    {name:"Rahul", age:25},
+    {name:"Aman", age:18},
+    {name:"Priya", age:30}
+];
+users2.sort((a,b) => a.age - b.age);
+console.log(users2)
