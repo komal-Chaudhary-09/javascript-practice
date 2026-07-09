@@ -32,4 +32,37 @@ console.log(arr2.includes(900));
 
 console.log(arr2.lastIndexOf(90));
 
+let users = [
+    {id:1 , name:"komal"},
+    {id:2 , name : "anu"},
+    {id:3 , name: "hello"}
+];
+
+let user = users.find(item => item.id == 2);
+console.log(user.name);
+
+let numbers = [300,400,500,300,200,20900];
+let ans1 = numbers.filter(num => num > 300);
+console.log(ans1)
+
+let products  = [
+    {name: 'laptop' , price: 90000},
+    {name: 'phone' , price : 30000},
+    {name : 'bottle' , price : 300}
+];
+
+let expensive = products.filter(product => product.price > 900);
+console.log(expensive)
+
+let num3 = [1,2,3];
+let ans3 = num3.map(num => num*3);
+console.log(ans3)
+
+let users4= [
+    {name:"Rahul"},
+    {name:"Aman"},
+    {name:"Priya"}
+]; 
+let names = users4.map(user => user.name);
+console.log(names)
 
