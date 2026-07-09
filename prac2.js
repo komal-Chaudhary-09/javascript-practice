@@ -40,3 +40,21 @@ let users = [
 
 let user = users.find(item => item.id == 1);
 console.log(user.name)
+
+
+/* transform an array */
+
+
+let length = ["Bilbo", "Gandalfd", "Nazgul"].map(item => item.length);
+console.log(length)
+
+
+
+
+
+
+
+
+
+
+
