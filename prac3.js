@@ -93,3 +93,20 @@ console.log(arr2)
 let arr3 = ["apple", "banana", "juice" , "mango"];
 let str3 = arr.join(",");
 console.log(str3)
+
+let sample = [1,2,3,4,5];
+
+let sum = sample.reduce((acc,current) =>{
+
+        return acc+current;
+    },0);
+    console.log(sum);
+
+
+    let sample1 = [2,3,4];
+    let ans = sample1.reduce((acc, current) => {
+        return acc * current;
+    } , 1);
+    console.log(ans)
+
+   
