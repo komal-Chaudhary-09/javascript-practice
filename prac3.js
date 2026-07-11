@@ -110,43 +110,89 @@
 //     console.log(ans)
 
 
-let arr = [10,20,30];
-for (let num in arr){
-console.log(num);
+// let arr = [10,20,30];
+// for (let num in arr){
+// console.log(num);
+// }
+// let arr2 = [10,20,30,40,50,60];
+
+// for (let i =0; i<= arr.length ; i++){
+//     console.log(arr2[i])
+// }
+
+// let arr3 = [90.80,70,60];
+// let iterator =  arr[Symbol.iterator]();
+
+// let range = {
+//     start: 1,
+//     end: 5,
+
+//     [Symbol.iterator]() {
+//         let current = this.start;
+//         let last = this.end;
+
+//         return {
+//             next() {
+//                 if (current <= last) {
+//                     return {
+//                         value : current++,
+//                         done : false
+//                     };
+//                 } else{
+//                     return {
+//                         done: false
+//                     };
+//                 }
+//             }
+//         };
+//     }
+// };
+// for (let num of range){
+//     console.log(num);
+// }
+
+// let map = new Map();
+//  map.set("name" , "komal");
+//  map.set ("age", 20);
+//  console.log(map.get("name"))
+
+// let user = {
+//     id: 101
+// };
+
+// let map = new Map();
+// let user = {
+//     id : 10
+// };
+
+// map.set(user , "rahul" );
+// console.log(map.get(user));
+
+
+let students = new Map();
+students.set( "name" , "komal");
+students.set ("age" , 20);
+
+console.log(students.get("name"));
+console.log(students.sixe);
+
+console.log(students.has("age"));
+students.delete("age")
+
+let recipeMap = new Map([
+  ['cucumber', 500],
+  ['tomatoes', 350],
+  ['onion',    50]
+]);
+
+for (let vegetable of recipeMap.keys()){
+    console.log(vegetable)
 }
-let arr2 = [10,20,30,40,50,60];
 
-for (let i =0; i<= arr.length ; i++){
-    console.log(arr2[i])
+for (let amount of recipeMap.values()){
+    console.log(amount)
 }
 
-let arr3 = [90.80,70,60];
-let iterator =  arr[Symbol.iterator]();
-
-let range = {
-    start: 1,
-    end: 5,
-
-    [Symbol.iterator]() {
-        let current = this.start;
-        let last = this.end;
-
-        return {
-            next() {
-                if (current <= last) {
-                    return {
-                        value : current++,
-                        done : false
-                    };
-                } else{
-                    return {
-                        done: false
-                    };
-                }
-            }
-        };
-    }
-};
-for (let num of range){
-    console.log(num);
+for (let entry in recipeMap){
+    console.log(entry)
 }

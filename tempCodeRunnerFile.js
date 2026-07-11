@@ -1,5 +1,8 @@
+let map = new Map();
+//  map.set("name" , "komal");
+//  map.set ("age", 20);
+//  console.log(map.get("name"))
 
-let arr2 = [10,20,30,40,50,60];
-
-for (let i =0; i<= arr.length ; i++){
-    console.log(arr2)
+// let user = {
+//     id: 101
+// };
