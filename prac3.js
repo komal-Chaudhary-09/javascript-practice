@@ -82,31 +82,71 @@
 // users2.sort((a,b) => a.age - b.age);
 // console.log(users2)
 
-let str = "apple, banana, mango";
-let arr = str.split(",");
-console.log(arr)
+// let str = "apple, banana, mango";
+// let arr = str.split(",");
+// console.log(arr)
 
-let str2  = "javascript is awesome";
-let arr2 = str2.split(" ");
-console.log(arr2)
+// let str2  = "javascript is awesome";
+// let arr2 = str2.split(" ");
+// console.log(arr2)
 
-let arr3 = ["apple", "banana", "juice" , "mango"];
-let str3 = arr.join(",");
-console.log(str3)
+// let arr3 = ["apple", "banana", "juice" , "mango"];
+// let str3 = arr.join(",");
+// console.log(str3)
 
-let sample = [1,2,3,4,5];
+// let sample = [1,2,3,4,5];
 
-let sum = sample.reduce((acc,current) =>{
+// let sum = sample.reduce((acc,current) =>{
 
-        return acc+current;
-    },0);
-    console.log(sum);
+//         return acc+current;
+//     },0);
+//     console.log(sum);
 
 
-    let sample1 = [2,3,4];
-    let ans = sample1.reduce((acc, current) => {
-        return acc * current;
-    } , 1);
-    console.log(ans)
+//     let sample1 = [2,3,4];
+//     let ans = sample1.reduce((acc, current) => {
+//         return acc * current;
+//     } , 1);
+//     console.log(ans)
 
-   
+
+let arr = [10,20,30];
+for (let num in arr){
+console.log(num);
+}
+let arr2 = [10,20,30,40,50,60];
+
+for (let i =0; i<= arr.length ; i++){
+    console.log(arr2[i])
+}
+
+let arr3 = [90.80,70,60];
+let iterator =  arr[Symbol.iterator]();
+
+let range = {
+    start: 1,
+    end: 5,
+
+    [Symbol.iterator]() {
+        let current = this.start;
+        let last = this.end;
+
+        return {
+            next() {
+                if (current <= last) {
+                    return {
+                        value : current++,
+                        done : false
+                    };
+                } else{
+                    return {
+                        done: false
+                    };
+                }
+            }
+        };
+    }
+};
+for (let num of range){
+    console.log(num);
+}
